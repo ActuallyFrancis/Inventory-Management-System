@@ -11,9 +11,9 @@ class ThemeEngine:
         Two methods : (1) light_mode  (2) dark_mode
         Colour Pallete used =>
         Light blue for gradient button(TOP) : #05edfe
-        Dark blue for gradient button(BOTTOM) : #4eacfe
+        Dark blue for gradient button(BOTTOM) : #ffffff
         Main Heading : #22d3fe <- Medium Blue
-        Sub-Headings : #4eacfe <- Dark blue
+        Sub-Headings : #ffffff <- Dark blue
     """
     def __init__(self):
         self.style = ttk.Style()
@@ -29,26 +29,26 @@ class ThemeEngine:
 
     def light_mode(self):
         # Background Colour -> little grey
-        self.style.configure('mainframe.TFrame', background='#f0f0f0')
+        self.style.configure('mainframe.TFrame', background='#c19a6b')
         # Content Frame Colour -> Pure White
-        self.style.configure('TFrame', background='#fff')
+        self.style.configure('TFrame', background='#c19a6b')
         # self.style.configure('headings.TLabel', foreground ='#222')
-        self.style.configure('TLabel', background='#fff', foreground="black")
+        self.style.configure('TLabel', background='#c19a6b', foreground="black")
         
         # Entry, Buttons Background and foreground
-        self.entry_bg = self.button_bg = '#fff'  # Same colour as Content Frame
+        self.entry_bg = self.button_bg = '#c19a6b'  # Same colour as Content Frame
         self.entry_fg = '#000'
         
     def dark_mode(self):
         # Background Colour -> more dark grey
-        self.style.configure('mainframe.TFrame', background='#21252b')
+        self.style.configure('mainframe.TFrame', background='#704214')
         # Background Colour -> less dark grey
-        self.style.configure('TFrame', background='#282c34')
+        self.style.configure('TFrame', background='#704214')
         # self.style.configure('headings.TLabel', foreground ='red')
-        self.style.configure('TLabel', background='#282c34', foreground="white")
+        self.style.configure('TLabel', background='#704214', foreground="white")
         
         # Entry, Buttons Background and foreground
-        self.entry_bg = self.button_bg = '#282c34' # Same colour as Content Frame
+        self.entry_bg = self.button_bg = '#704214' # Same colour as Content Frame
         self.entry_fg = '#fff'
         
         

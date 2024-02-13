@@ -45,7 +45,7 @@ class SalesWindow(tk.Frame, ThemeEngine):
         back_btn.pack(side="left", padx=50)
         # Title Label
         title_label = ttk.Label(title_frame, text="SALES", font="Arial 60 bold",
-                                foreground='#22d3fe')
+                                foreground='#ffffff')
         title_label.pack(side="left", padx=320)
         # Date and Time Label
         date_string = time.strftime("%a,%d/%b/%y")
@@ -61,7 +61,7 @@ class SalesWindow(tk.Frame, ThemeEngine):
 
         # Heading Label
         heading_label = ttk.Label(customer_details_frame, text="Customer Details",
-                                 font="Arial 15 bold", foreground='#4eacfe')
+                                 font="Arial 15 bold", foreground='#ffffff')
         heading_label.grid(row=0, column=0, padx=30, pady=10) 
         # Customer Name Label and Entry
         cname_label = ttk.Label(customer_details_frame, text="Customer Name",
@@ -103,7 +103,7 @@ class SalesWindow(tk.Frame, ThemeEngine):
         options_frame.place(x=930, y=130, width=390, height=82)
 
         # Customer Details Heading Label
-        heading_label = ttk.Label(options_frame, text="Options", font=("Arial", 15, "bold"), foreground='#4eacfe')
+        heading_label = ttk.Label(options_frame, text="Options", font=("Arial", 15, "bold"), foreground='#ffffff')
         heading_label.grid(row=0, column=0, padx=30, pady=10) 
 
         # Clear all button
@@ -131,7 +131,7 @@ class SalesWindow(tk.Frame, ThemeEngine):
         
         # Heading Label
         heading_label = ttk.Label(selection_frame, text="Product Selection",
-                                 font="Arial 15 bold", foreground='#4eacfe')
+                                 font="Arial 15 bold", foreground='#ffffff')
         heading_label.grid(row=0, column=0, padx=30, pady=10)
              
         # Category 
@@ -220,7 +220,7 @@ class SalesWindow(tk.Frame, ThemeEngine):
         self.add_to_cart_img = tk.PhotoImage(file='images/shopping_cart.png')
         heading_label = ttk.Label(cart_frame, image=self.add_to_cart_img,
                                  text="CART", font="Arial 15 bold",
-                                  foreground='#4eacfe', compound='left')
+                                  foreground='#ffffff', compound='left')
         heading_label.grid(row=0, column=0, padx=60, pady=10, sticky='W')
         
         # Cart Treeview

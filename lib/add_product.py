@@ -150,7 +150,7 @@ class AddProductTopWindow(ThemeEngine):
 
         # Menu Heading Label
         heading_label = ttk.Label(apw_frame2, text="Menu", font="Arial 30 bold",
-                                 foreground='#4eacfe')
+                                 foreground='#ffffff')
         heading_label.pack(pady=15)
 
         # Add New Product Button

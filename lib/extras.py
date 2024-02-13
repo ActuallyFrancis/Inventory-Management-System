@@ -46,7 +46,7 @@ class ExtrasWindow(ttk.Frame, ThemeEngine):
         back_btn.place(relwidth=0.15, relheight=1)
         # Title Label
         title_label = ttk.Label(title_frame, text="EXTRAS", font="Arial 60 bold",
-                                 foreground='#22d3fe')
+                                 foreground='#ffffff')
         title_label.pack()
         # Date and Time Label
         date_string = time.strftime("%a,%d/%b/%y")
@@ -63,7 +63,7 @@ class ExtrasWindow(ttk.Frame, ThemeEngine):
         
         # Heading Label
         heading_label = ttk.Label(ch_pass_frame, text="CHANGE PASSWORD",
-                                 font="Arial 20 bold", foreground='#4eacfe')
+                                 font="Arial 20 bold", foreground='#ffffff')
         heading_label.pack(side='top', pady=25)
         # Current Password
         current_password_label = ttk.Label(ch_pass_frame, text="Current Password",
@@ -106,7 +106,7 @@ class ExtrasWindow(ttk.Frame, ThemeEngine):
         theme_frame.place(x=970, y=135, width=350, height=300)
         
         heading_label = ttk.Label(theme_frame, text="CHANGE THEME",
-                                 font="Arial 20 bold", foreground='#4eacfe')
+                                 font="Arial 20 bold", foreground='#ffffff')
         heading_label.pack(side='top', pady=25)
         
         # Fetching theme value from db

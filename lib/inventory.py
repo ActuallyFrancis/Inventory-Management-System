@@ -15,7 +15,7 @@ from lib.add_product import AddProductTopWindow
 
 
 class InventoryWindow(tk.Frame, ThemeEngine):
-    """Inventory Window to Update or Delete Inventories and to add New product"""
+    """Inventory Window to Update or Delete Inventories  and to add New product"""
     
     def __init__(self, master):
         tk.Frame.__init__(self, master)
@@ -44,7 +44,7 @@ class InventoryWindow(tk.Frame, ThemeEngine):
         back_btn.pack(side="left", padx=50)
         # Title Label
         title_label = ttk.Label(title_frame, text="INVENTORY ",
-                                font="Arial 60 bold", foreground='#22d3fe')
+                                font="Arial 60 bold", foreground='#ffffff')
         title_label.pack(side="left", padx=240)
         # Time Label
         date_string = time.strftime("%a,%d/%b/%y")
@@ -62,7 +62,7 @@ class InventoryWindow(tk.Frame, ThemeEngine):
         
         # Heading Label
         heading_label = ttk.Label(product_list_frame, text="Product List",
-                                 font="Arial 20 bold", foreground='#4eacfe', justify='left')
+                                 font="Arial 20 bold", foreground='#ffffff', justify='left')
         heading_label.grid(row=0, column=0, padx=30, pady=15)
 
         # Product list Treeview
@@ -158,7 +158,7 @@ class InventoryWindow(tk.Frame, ThemeEngine):
 
         # Heading Label
         heading_label = ttk.Label(product_menu_frame, text="Menu",
-                                 font="Arial 20 bold", foreground='#4eacfe')
+                                 font="Arial 20 bold", foreground='#ffffff')
         heading_label.place(x=140, y=15)
 
         # Product Name

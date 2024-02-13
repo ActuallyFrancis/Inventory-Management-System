@@ -39,7 +39,7 @@ class LoginWindow(ttk.Frame, ThemeEngine):
         
         # Adding Title
         title = ttk.Label(self.bg_frame, text="USER LOGIN",
-                          font="Arial 40 bold", foreground='#22d3fe')
+                          font="Arial 40 bold", foreground='#ffffff')
         title.place(x=0,y=17, relx=0.3)
 
         # Adding Login logo in the Frame
@@ -52,7 +52,7 @@ class LoginWindow(ttk.Frame, ThemeEngine):
         self.password = tk.StringVar()
         # Username
         username_label = ttk.Label(self.bg_frame, text="Username",
-                                    font="Arial 20 bold")
+                                    font="Arial 20 bold", foreground = '#ffffff')
         username_label.place(x=225,y=120)
         self.username_entry = tk.Entry(self.bg_frame, textvariable=self.username,
                                         font="Arial 16 bold", bd=0,
@@ -66,7 +66,7 @@ class LoginWindow(ttk.Frame, ThemeEngine):
         line_label.bind("<Button-1>", lambda e: self.username_entry.focus_set())
         # Password
         password_label = ttk.Label(self.bg_frame, text="Password",
-                                     font="Arial 20 bold")
+                                     font="Arial 20 bold", foreground='#ffffff')
         password_label.place(x=225,y=190)
         self.password_entry = tk.Entry(self.bg_frame, textvariable=self.password,
                                     show="*", font="Arial 16 bold", bd=0,

@@ -32,7 +32,7 @@ class MainMenuWindow(ttk.Frame, ThemeEngine):
                                              x_cordinate, y_cordinate))
         master.resizable(0,0) # Disabling resize
         # Setting Window Title
-        master.title("Inventory Management System")
+        master.title("Light Track System")
         # Adding icon to title menu
         master.iconbitmap("images/stock_title_icon.ico")
 
@@ -54,7 +54,10 @@ class MainMenuWindow(ttk.Frame, ThemeEngine):
         logout_btn.place(relwidth=0.155, relheight=1)
         # Title Label
         title_label = ttk.Label(title_frame, text="MAIN MENU",
-                                 font="Arial 60 bold", foreground='#22d3fe')
+                        font=("Times New Roman", 60, "bold"), foreground='#ffffff')
+
+        
+        
         title_label.pack()
         # Date and Time Label
         date_string = time.strftime("%a,%d/%b/%y")
@@ -63,7 +66,6 @@ class MainMenuWindow(ttk.Frame, ThemeEngine):
         date_label.place(x=1090, y=15)
         time_label = ttk.Label(title_frame, text=time_string, font="Arial 18 bold")
         time_label.place(x=1115, y=50)
-        
         #======================== Body Frame ===========================#
 
         body_frame = ttk.Frame(bg_frame)
@@ -71,7 +73,7 @@ class MainMenuWindow(ttk.Frame, ThemeEngine):
 
         # Program Title
         program_title_label = ttk.Label(body_frame, text="INVENTORY MANAGEMENT SYSTEM",
-                                     font="Arial 45 bold", foreground='#4eacfe')
+                                     font=("Times New Roman", 45, "bold"), foreground='#ffffff')
         program_title_label.place(x=110, y=40)
 
         # Sales Button
